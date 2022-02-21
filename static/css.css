@@ -13,10 +13,12 @@ a:hover{
     color: black;
 }
 .pad {
-    background-color: #90ADC6 !important;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+    /*background-color: #8E806A !important;*/
+    font-family: 'KoHo', sans-serif;
+
+    font-size: 80px;
+    color: white;
+
 }
 .pad2{
     background-color: #E9EAEC!important;
@@ -25,4 +27,14 @@ a:hover{
 }
 body{
     background-color: #E9EAEC!important;
+}
+#p_image{
+    background-image: url("coffee.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1620px;
+    padding-bottom: 200px !important;
+
+
+
 }

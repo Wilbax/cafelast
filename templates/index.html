@@ -13,9 +13,9 @@
           type="text/css">
     <link  href="static/css.css" rel="stylesheet"
           type="text/css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=KoHo:ital,wght@0,200;1,300&family=Patrick+Hand&family=Shizuru&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="p-3 bg-dark text-white">
@@ -51,9 +51,9 @@
     </div>
 </header>
 
-<section class="py-5 text-center container pad">
-    <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
+<section class="py-5 text-center container pad" id="p_image">
+    <div class="row py-lg-5 " >
+        <div class="col-lg-6 col-md-8 " >
 {#            <h1 class="fw-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">album#}
 {#                example</font></font></h1>#}
 {#            <p class="lead text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A#}
@@ -66,8 +66,8 @@
 {#                <a href="#" class="btn btn-secondary my-2"><font style="vertical-align: inherit;"><font#}
 {#                        style="vertical-align: inherit;">secondary work</font></font></a>#}
 {#            </p>#}
-            <p class="justify-content-center">
-                This is the place to find your next favourite coffee!
+            <p class="px-auto ps-5 pad">
+                This is the place to find your next favourite<br> coffee!
             </p>
             <p>
 
@@ -81,7 +81,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {% for cafe in cafes %}
 
-                <div class="col ">
+                <div class="col text-center">
 
                     <div class="card shadow-sm cardc">
 
