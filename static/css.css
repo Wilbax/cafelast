@@ -1,0 +1,28 @@
+.name{
+    font-size: 1.4rem;
+    font-family: 'Patrick Hand', cursive;
+}
+a:visited {
+  text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+.pad {
+    background-color: #90ADC6 !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pad2{
+    background-color: #E9EAEC!important;
+    /*margin-left: 18.25rem;*/
+    /*margin-right: 18.25rem;*/
+}
+body{
+    background-color: #E9EAEC!important;
+}
