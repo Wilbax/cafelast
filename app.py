@@ -38,7 +38,7 @@ class Cafe(db.Model):
 
 
 @app.route('/')
-def hello_world():
+def home():
     cafes = Cafe.query.all()
     cafe_list = [cafe.to_dict() for cafe in cafes]
     return render_template("index.html", cafes=cafe_list)
