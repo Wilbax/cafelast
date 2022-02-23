@@ -9,8 +9,8 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+app.config['SECRET_KEY'] = "jyhtfrdyjtdyjtdyjdtyj"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///cafes.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False,
                     base_url=None)
