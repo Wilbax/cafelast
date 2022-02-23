@@ -12,15 +12,15 @@ a:hover{
 .pad {
     /*background-color: #8E806A !important;*/
     font-family: 'KoHo', sans-serif;
-
+    max-width: none;
     font-size: 80px;
     color: white;
 
 }
 .pad2{
     background-color: #E9EAEC!important;
-    /*margin-left: 18.25rem;*/
-    /*margin-right: 18.25rem;*/
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 body{
     background-color: #E9EAEC!important;
@@ -29,7 +29,7 @@ body{
     background-image: url("coffee.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 1620px;
+    background-size: cover;
     padding-bottom: 200px !important;
 }
 #logo {
@@ -42,4 +42,10 @@ body{
 a{
     text-decoration: none;
     color: black;
+}
+
+#xxx{
+    width: 1500px  ;
+    position: relative;
+    right: 4.5rem
 }

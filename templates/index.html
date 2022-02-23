@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,18 +28,18 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link " aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link ">Contact</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form class="d-flex" action="{{ url_for('search')}}" method="post">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -71,7 +72,7 @@
 
 <div class="album py-5 pad2">
     <div class="container">
-        <div class="row row-cols-lg-3 row-cols-md-1 g-4">
+        <div class="row row-cols-lg-3 row-cols-md-1 g-3"  id="xxx">
             {% for cafe in cafes %}
 
                 <div class="text-center">
@@ -83,7 +84,7 @@
                         <div class="card-body name ms-auto">
                             <p class="card-text ">
 
-                                    <a href="{{ cafe.map_url }}">{{ cafe.name }}</a>
+                                    <a href="{{ cafe.map_url }} " target="_blank">{{ cafe.name }}</a>
                             </p>
                             <div class="d-flex justify-content-between align-items-center ">
                                 <div class="btn-group ms-auto">
@@ -144,6 +145,17 @@
                 </div>
 
             {% endfor %}
+            {% if not search %}
+                <div class="text-center">
+                    <div class="card shadow-sm cardc ">
+                        <div class="card-body name ms-auto">
+                            <a href="{{ url_for('add') }}">
+                                <img src="static/img_13.png" height="50" width="50">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
